@@ -48,18 +48,19 @@ header {
 
 
 
-.titulo {
+.titulo h1{
     font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
 
 
 
 .planos {
-
+    display: flex;
+    gap: 15px;
 }
-
 .card-planos {
     background-color: rgb(32, 38, 44);
     padding: 25px;
@@ -70,7 +71,6 @@ header {
     flex-direction: column;
     text-align: left;
 }
-
 .nome {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -78,10 +78,12 @@ header {
     padding-bottom: 10px;
     border-bottom: 1px solid brown;
 }
+
+
 .preco-mes {
     display: block;
     margin-top: 20px;
-    border: 1px solid brown;
+    /* border: 1px solid brown; */
 }
 .preco {
     color: white;
@@ -93,23 +95,34 @@ header {
     margin: 0px;
     display: inline-block;
 }
-.titulo {
-    color: white;
-}
+
+
 .lista-conteudo {
-    /* display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-left: 0px; */
-    padding-left: 13px;
-    
+
+    margin-left: 0px; 
+    padding-left: 13px; 
 }
-.conteudo {
-    border: 1px solid white;
-    
+.conteudo::marker {
+    color: yellow;
 }
 .conteudo p {
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
     color: white;
-    border: 1px solid yellow;
+    margin: 5px 0px;
+}
+
+
+
+.assineJa {
+    height: 35px;
+    margin-top: auto;
+    border-radius: 4px;
+}
+.assineJa:hover {
+    background-color: yellow;
 }
